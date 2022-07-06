@@ -1,6 +1,12 @@
 * {
     padding: 0px;
     margin: 0px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2px;
 }
 
 header {
@@ -74,14 +80,14 @@ header {
     background-position: center;
 }
 
-.game-choice-left {
+/* .game-choice-left {
     padding-left: 14rem;
     padding-top: 14rem;
-}
+} */
 
-.game-choice-right {
+/* .game-choice-right {
     transform: translate(-30%, 60%);
-}
+} */
 
 /* GAME FEATURES */
 
