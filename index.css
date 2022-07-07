@@ -4,9 +4,9 @@
 
     font-family: 'Arial';
     font-style: normal;
-    font-weight: 400;
+    /* font-weight: 400;
     line-height: 28px;
-    letter-spacing: 2px;
+    letter-spacing: 2px; */
 }
 
 header {
@@ -20,13 +20,23 @@ header {
     background-position: center;
 }
 
-.navbar-brand {
+/* .navbar-brand {
     margin-left: 5rem;
     margin-right: 5rem;
-}
+} */
 
 .navbar-brand>img {
-    width: 2.5rem;
+    width: 4rem;
+}
+
+@media(max-width: 768px) {
+    .navbar-brand>img {
+        width: 3.5rem;
+    }
+
+    .navbar-nav {
+        margin-left: 0px !important;
+    }
 }
 
 .navbar-nav {
@@ -65,6 +75,28 @@ header {
     text-align: center;
 }
 
+.bounce-animation {
+    animation: bounce-1 2s linear infinite
+}
+
+@keyframes bounce-1 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ============================================================================================================================================================= */
+
+
+
 /* GAME CHOICE */
 .game-choice {
     height: 100vh;
@@ -80,17 +112,6 @@ header {
     background-position: center;
 }
 
-/* .game-choice-left {
-    padding-left: 14rem;
-    padding-top: 14rem;
-} */
-
-/* .game-choice-right {
-    transform: translate(-30%, 60%);
-} */
-
-/* GAME FEATURES */
-
 .game-feature {
     height: 100vh;
     width: 100%;
@@ -102,19 +123,8 @@ header {
         url('./assets/features.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-position: center; */
+    background-position: center;
 }
-
-.game-feature-content {
-    padding-top: 7rem;
-    padding-left: 7rem;
-    /* transform: translate(50%, 50%); */
-}
-
-.game-feature-title {
-    margin-top: 5rem;
-}
-
 
 /* SYS REQ */
 
@@ -131,21 +141,12 @@ header {
     background-size: cover;
 }
 
-.sys-req-text-top {
-
-    padding-top: 7rem;
-}
-
-.sys-req-text {
-
-    padding-left: 7rem;
-}
-
-/* TOP SCAORES */
+/* TOP SCORES */
 
 .top-score {
     height: 100vh;
     width: 100%;
+    background-color: black;
     background-image:
         radial-gradient(10% 70.57% at 50% 50.04%,
             rgba(255, 255, 255, 0) 0%,
@@ -154,57 +155,26 @@ header {
         url('./assets/top-score-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.top-score-text {
-    padding-top: 20%;
-    padding-left: 23%;
-}
-
-.btn-top-score {
-    /* padding-top: 3rem; */
-    padding: 1rem 4rem;
-}
-
-.top-score-card {
-    padding-top: 1%;
+    background-position: center;
 }
 
 .top-score-img {
     background-image: url('./assets/ellipse-orange.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding-right: 0.3rem;
-    padding-bottom: 0.3rem;
+    padding-bottom: 0.4rem;
 }
-
-.card {
-    max-width: 30rem;
-    margin-left: 5rem;
-    margin-top: 5rem;
-    margin-right: 0px;
-}
-
-.top-score-card>.little-right {
-    margin-left: 10rem;
-}
-
-
 
 /* NESLETTER */
 
 .newsletter {
     height: 100vh;
     width: 100%;
-    background-image: url('./assets/newsletter.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
 }
 
-.newsletter-right {
-    padding-top: 10rem;
-    color: white;
-}
-
-.img-skull {
-    margin-left: 30%;
-    margin-top: 20%;
+.fs-vs {
+    font-size: 0.9rem !important;
 }
